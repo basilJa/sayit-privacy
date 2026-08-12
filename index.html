@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SayIt — Privacy Policy</title>
+<meta name="description" content="SayIt reads your notifications aloud. Everything stays on your phone: no server, no account, no analytics, no tracking.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🗣️</text></svg>">
+<style>
+  :root {
+    --bg:        #ebf0eb;
+    --surface:   #ffffff;
+    --ink:       #10160f;
+    --muted:     #56605a;
+    --accent:    #3a8f5c;
+    --accent-dk: #1c5032;
+    --line:      #dde5de;
+    --chip:      #f0f4f0;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg:        #0a0d0b;
+      --surface:   #171b18;
+      --ink:       #f0f3f0;
+      --muted:     #9ba69e;
+      --accent:    #7dc38d;
+      --accent-dk: #a8d7b3;
+      --line:      #2a322c;
+      --chip:      #212722;
+    }
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 400 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap { max-width: 44rem; margin: 0 auto; padding: 0 1.5rem 6rem; }
+
+  header {
+    padding: 4.5rem 0 2.5rem;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 3rem;
+  }
+  .mark {
+    font-size: 2.6rem;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    margin: 0;
+    background: linear-gradient(105deg, var(--accent), var(--accent-dk));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .tagline {
+    margin: 0.5rem 0 0;
+    color: var(--muted);
+    font-size: 0.95rem;
+  }
+  h1 {
+    font-size: 1.9rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin: 2rem 0 0.4rem;
+    text-wrap: balance;
+  }
+  .meta {
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin: 0;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    margin: 3rem 0 0.75rem;
+    padding-top: 0.4rem;
+    text-wrap: balance;
+  }
+  h2::before {
+    content: "";
+    display: block;
+    width: 2rem;
+    height: 3px;
+    border-radius: 2px;
+    background: var(--accent);
+    margin-bottom: 0.9rem;
+  }
+
+  p, li { color: var(--ink); }
+  p { margin: 0 0 1rem; }
+  ul { margin: 0 0 1rem; padding-left: 1.25rem; }
+  li { margin-bottom: 0.5rem; }
+  strong { font-weight: 650; }
+  a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+
+  .lede {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 1.5rem 1.6rem;
+    margin: 0 0 1rem;
+  }
+  .lede p:last-child { margin-bottom: 0; }
+
+  .facts {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.35rem 1.25rem;
+    margin: 1.5rem 0 0;
+    font-size: 0.92rem;
+  }
+  .facts dt { color: var(--muted); }
+  .facts dd { margin: 0; }
+  .facts code {
+    background: var(--chip);
+    border-radius: 5px;
+    padding: 0.1em 0.4em;
+    font-size: 0.9em;
+  }
+
+  .table-scroll { overflow-x: auto; margin: 0 0 1rem; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.94rem; }
+  th, td {
+    text-align: left;
+    padding: 0.65rem 0.9rem;
+    border-bottom: 1px solid var(--line);
+    vertical-align: top;
+  }
+  th {
+    font-weight: 650;
+    font-size: 0.8rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  td:first-child { white-space: nowrap; }
+  td code {
+    background: var(--chip);
+    border-radius: 5px;
+    padding: 0.1em 0.4em;
+    font-size: 0.88em;
+  }
+
+  footer {
+    margin-top: 4rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 30rem) {
+    body { font-size: 16px; }
+    header { padding-top: 3rem; }
+    .mark { font-size: 2.1rem; }
+    h1 { font-size: 1.55rem; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <p class="mark">SayIt</p>
+    <p class="tagline">Eyes up. Hands free. Every notification, spoken.</p>
+    <h1>Privacy Policy</h1>
+    <p class="meta">Last updated 12 August 2026</p>
+    <dl class="facts">
+      <dt>App</dt><dd><code>software.basilbase.sayit</code></dd>
+      <dt>Developer</dt><dd>basilbase</dd>
+      <dt>Contact</dt><dd><a href="mailto:basilbase.software@gmail.com">basilbase.software@gmail.com</a></dd>
+    </dl>
+  </header>
+
+  <div class="lede">
+    <p><strong>The short version.</strong> SayIt reads your notifications out loud. Everything
+    it reads stays on your phone. No notification content, and no personal data of any kind, is
+    sent to basilbase or to anyone else. There are no analytics, no advertising, and no
+    accounts.</p>
+  </div>
+
+  <h2>What the app can see</h2>
+  <p>To do its job, SayIt uses Android's <strong>notification access</strong> permission. Once
+  you grant it, the app receives the notifications your phone displays — the posting app's
+  name, the title and sender, and the message text.</p>
+  <p>It also reads:</p>
+  <ul>
+    <li><strong>Installed apps that have a launcher icon</strong>, so you can choose which apps
+      get read aloud. SayIt does not request the broad <code>QUERY_ALL_PACKAGES</code>
+      permission.</li>
+    <li><strong>Connected audio devices</strong> — whether a Bluetooth or wired headset is
+      present, to decide whether reading is allowed.</li>
+    <li><strong>Battery level and charging state</strong>, only if you turn on battery
+      announcements.</li>
+    <li><strong>The accelerometer</strong>, only if you turn on shake-to-stop.</li>
+  </ul>
+
+  <h2>What the app does with it</h2>
+  <p>Notification text is converted to speech by the text-to-speech engine already installed on
+  your device, and then discarded. Processing happens entirely on the device.</p>
+  <p>If you leave <strong>Save notification history</strong> enabled, a short log of what was
+  read is stored in the app's own private storage on your phone so you can replay recent items.
+  It is never uploaded. You can turn the log off, or erase it, under
+  <strong>History → Clear history</strong>.</p>
+  <p>Your settings are stored in the app's private preferences on the device. If you use
+  <strong>Setup → Export</strong>, a settings file is written wherever <em>you</em> choose to
+  save it; nothing is uploaded by the app.</p>
+
+  <h2>What is never collected</h2>
+  <ul>
+    <li>No notification content is transmitted off the device.</li>
+    <li>No contacts, messages, photos, location, or device identifiers are collected.</li>
+    <li>No analytics, crash-reporting, advertising, or tracking SDKs are included.</li>
+    <li>No account or sign-in is required, and none is offered.</li>
+  </ul>
+
+  <h2>Third parties</h2>
+  <p>SayIt contains no third-party SDKs.</p>
+  <p>Speech is produced by the text-to-speech engine on your device (for example Google
+  Text-to-Speech or Samsung TTS), which is a separate app governed by its own privacy policy.
+  Some TTS engines can synthesise speech in the cloud; whether that happens, and what it means
+  for your data, is determined by that engine's settings — not by SayIt. If this matters to
+  you, choose an engine with offline voices installed, under
+  <strong>Voice → Change TTS engine</strong>.</p>
+
+  <h2>Data retention and deletion</h2>
+  <p>There is no server, so there is nothing for us to retain or delete. Everything the app
+  stores lives on your device and is removed when you uninstall the app. The notification
+  history can also be cleared at any time from <strong>History → Clear history</strong>, and
+  all settings can be restored to defaults from the reset control on the home screen.</p>
+
+  <h2>Children</h2>
+  <p>SayIt is not directed at children and is rated for users aged 18 and over. It reads
+  personal messages aloud and is not designed for use by children.</p>
+
+  <h2>Permissions in full</h2>
+  <div class="table-scroll">
+    <table>
+      <thead>
+        <tr><th scope="col">Permission</th><th scope="col">Why</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Notification access<br><code>BIND_NOTIFICATION_LISTENER_SERVICE</code></td>
+          <td>The core function — reading notifications aloud</td>
+        </tr>
+        <tr>
+          <td><code>POST_NOTIFICATIONS</code></td>
+          <td>To warn you if notification access is switched off</td>
+        </tr>
+        <tr>
+          <td><code>WAKE_LOCK</code></td>
+          <td>To keep the CPU awake while a message is being spoken</td>
+        </tr>
+        <tr>
+          <td><code>BLUETOOTH</code><br><code>BLUETOOTH_CONNECT</code></td>
+          <td>To detect whether a headset is connected</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Changes</h2>
+  <p>If this policy changes, the updated version will be published at this URL with a new date
+  at the top.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy:
+  <a href="mailto:basilbase.software@gmail.com">basilbase.software@gmail.com</a></p>
+
+  <footer>
+    SayIt is made by basilbase.
+  </footer>
+
+</div>
+</body>
+</html>
